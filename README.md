@@ -1,2 +1,2 @@
 ## fozg.net Landing page 
-A simple Landing builded with bootstrap & sass.
+A simple Landing page builded with bootstrap & sass.

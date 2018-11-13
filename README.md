@@ -12,7 +12,7 @@ npm install -g gulp
 ```
 ### `npm start`
 Runs the app in development mode.
-Open http://localhost:3000 to view it in the browser.
+Open `index.html` to view it in the browser.
 
 ### `npm build`
-... updating
+...working on 

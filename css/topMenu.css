@@ -1,0 +1,10 @@
+.TopMenu {
+  height: 0;
+  background: #26282c;
+  color: #26282c;
+  overflow: hidden;
+  transition: all .3s;
+  align-items: center; }
+  .TopMenu__active {
+    height: 50px;
+    color: #c8c8c8; }

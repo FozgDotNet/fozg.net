@@ -2845,6 +2845,17 @@ a.text-dark:hover, a.text-dark:focus {
   .offset-xl-11 {
     margin-left: 91.66667%; } }
 
+.TopMenu {
+  height: 0;
+  background: #26282c;
+  color: #26282c;
+  overflow: hidden;
+  transition: all .3s;
+  align-items: center; }
+  .TopMenu__active {
+    height: 50px;
+    color: #c8c8c8; }
+
 body {
   font-size: .9em; }
 

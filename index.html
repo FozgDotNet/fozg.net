@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Fozg.net</title>
+  <meta property="og:site_name" content="Tinhte.vn">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://fozg.net/">
+  <meta property="og:title" content="A Workspace Social | Fozg.net">
+  <meta property="og:description" content="A Workspace social make your works better.">
+  <meta name="description" content="A Workspace social make your works better.">
+  <meta name="keywords" content="Workspace,Social,Fozg,Works,Blogs">
+  <meta name="author" content="Phong (fozg) Dao">
   <link rel="stylesheet" href="css/index.css" />
-  <link rel="icon" href="static/images/favicon.png" />  
+  <link rel="icon" href="static/images/favicon.png" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
 </head>
+
 <body>
+  <script async src="src/app.js"></script>
+
+  <div id="menu" class="TopMenu row m-0" v-bind:class="{ TopMenu__active: isActive }">
+    <div class="p-2">
+      <img src="static/images/logo.png" alt="fozg.net" width="35">
+    </div>
+    <div class="col d-flex justify-content-end m-2">
+      <div class="row">
+        <a>Login</a>
+      </div>
+    </div>
+  </div>
   <div class="text-center header">
     <div class="container">
       <img src="static/images/logo.png" alt="fozg.net" class="pb-3" width="100">
@@ -23,15 +46,15 @@
 
           <div class="col-md-6">
             <a href="https://google.com">
-            <div class="row col AppItemWrap">
-              <div class="CircleBadget col-auto p-0">
-                <img src="static/images/TomatoWorks@2x.png" alt="TomatoWorks">
+              <div class="row col AppItemWrap">
+                <div class="CircleBadget col-auto p-0">
+                  <img src="static/images/TomatoWorks@2x.png" alt="TomatoWorks">
+                </div>
+                <div class="col">
+                  <h3>TomatoWorks</h3>
+                  <p>A Work log, tracking your time inspired by PromodoTimmer</p>
+                </div>
               </div>
-              <div class="col">
-                <h3>TomatoWorks</h3>
-                <p>A Work log, tracking your time inspired by PromodoTimmer</p>
-              </div>
-            </div>
             </a>
           </div>
 
@@ -79,4 +102,5 @@
     </div>
   </div>
 </body>
+
 </html>

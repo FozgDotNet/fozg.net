@@ -22,7 +22,7 @@
 <body>
   <script async src="src/app.js"></script>
 
-  <div id="menu" class="TopMenu row m-0" v-bind:class="{ TopMenu__active: isActive }">
+  <div id="menu" class="TopMenu row m-0 align-items-center" v-bind:class="{ TopMenu__active: isActive }">
     <div class="p-2">
       <img src="static/images/logo.png" alt="fozg.net" width="35">
     </div>
@@ -37,6 +37,7 @@
       <img src="static/images/logo.png" alt="fozg.net" class="pb-3" width="100">
       <h1>Introducing Fozg.net</h1>
       <h2>A Workspace Social made by <a href='#'>@fozg</a></h2>
+      <a class="btn btn-dark btn-sm">Read more</a>
     </div>
   </div>
   <div class="container mt-3">
@@ -45,7 +46,7 @@
         <div class="row">
 
           <div class="col-md-6">
-            <a href="https://fozg.net/tomato">
+            <a href="https://fozg.net/tomato" target="_blank">
               <div class="row col AppItemWrap">
                 <div class="CircleBadget col-auto p-0">
                   <img src="static/images/TomatoWorks@2x.png" alt="TomatoWorks">
@@ -59,10 +60,10 @@
           </div>
 
           <div class="col-md-6">
-            <a href="https://accounts.fozg.net">
+            <a href="https://accounts.fozg.net" target="_blank">
               <div class="row col AppItemWrap">
                 <div class="CircleBadget col-auto p-0">
-                  <img src="static/images/logo.png" alt="Accounts">
+                  <img src="static/images/account64.png" alt="Accounts">
                 </div>
                 <div class="col">
                   <h3><a>Accounts</a></h3>
@@ -71,11 +72,41 @@
               </div>
             </a>
           </div>
-          
+
           <div class="col-12">
             In development
             <hr style="border-top: 0.5px solid #eee"/>
           </div>
+          
+          <div class="col-md-6">
+            <a href="https://accounts.fozg.net" target="_blank">
+              <div class="row col AppItemWrap">
+                <div class="CircleBadget col-auto p-0">
+                  <img src="static/images/profile64.png" alt="Profile">
+                </div>
+                <div class="col">
+                  <h3><a>Profile</a></h3>
+                  <p>Your Profile on Fozg.net</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6">
+            <a href="https://accounts.fozg.net" target="_blank">
+              <div class="row col AppItemWrap">
+                <div class="CircleBadget col-auto p-0">
+                  <img src="static/images/dashboard2x64.png" alt="Profile">
+                </div>
+                <div class="col">
+                  <h3><a>Dashboard</a></h3>
+                  <p>See people you flowing</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          
           <div class="col-md-6">
             <div class="row col AppItemWrap">
               <div class="CircleBadget col-auto p-0">
@@ -83,7 +114,7 @@
               </div>
               <div class="col">
                 <h3><a>Write</a></h3>
-                <p>A Work log, tracking your time inspired by PromodoTimmer</p>
+                <p>Write everything you like</p>
               </div>
             </div>
           </div>
@@ -95,7 +126,7 @@
               </div>
               <div class="col">
                 <h3><a>Read</a></h3>
-                <p>A Work log, tracking your time inspired by PromodoTimmer</p>
+                <p>Read blogs, stories, note..</p>
               </div>
             </div>
           </div>

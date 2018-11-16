@@ -5,7 +5,10 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp sass:watch"
+    "sass": "gulp sass:watch",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "repository": {
     "type": "git",
@@ -21,12 +24,13 @@
     "url": "https://github.com/fozg/fozg.net/issues"
   },
   "homepage": "https://github.com/fozg/fozg.net#readme",
-  "devDependencies": {
-    "gulp-sass": "^4.0.2",
-    "node-sass": "^4.10.0"
-  },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
     "bootstrap": "^4.1.3",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "next": "^7.0.2",
+    "node-sass": "^4.10.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   }
 }

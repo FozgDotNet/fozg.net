@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:300,400,700');
+
+@import "~bootstrap/scss/_functions.scss";
+@import "~bootstrap/scss/_variables.scss";
+@import "~bootstrap/scss/_mixins.scss";
+@import "~bootstrap/scss/_reboot.scss";
+@import "~bootstrap/scss/_utilities.scss";
+@import "~bootstrap/scss/_grid.scss";
+@import "~bootstrap/scss/_buttons";
+
+
+$primaryColor: #138b80;
+
+body {
+  font-size: .9em;
+}
+h3 {
+  font-size: 1.2em;
+}
+a {
+  color: $primaryColor !important;
+  outline: none;
+  text-decoration: none !important;
+}
+p {
+  font-size: 14px;
+}
+h3 {
+  font-size: 16px;
+  margin: 0;
+}
+

@@ -7,13 +7,12 @@ A simple Landing page builded with bootstrap & sass.
 git clone https://github.com/fozg/fozg.net.git  
 cd fozg.net
 npm install
-
-# install gulp global
-npm install -g gulp
 ```
-### `npm start`
+### `npm run dev`
 Runs the app in development mode.
-Open `index.html` to view it in the browser.
+Open `localhost:3000` to view it in the browser.
 
-### `npm build`
-...working on 
+### `npm run export`
+Export the Next app to `./out` folder.
+
+### Thanks to [Nextjs](https://github.com/zeit/next.js) 😘

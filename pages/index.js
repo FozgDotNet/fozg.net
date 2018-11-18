@@ -6,6 +6,8 @@ export default () => (
   <Page title="Fozg.net">
     <Intro />
     
-    <AppList />
+    <div className="col-md-8 col-sm-10 mx-auto">
+      <AppList />
+    </div>
   </Page>
 )

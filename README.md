@@ -15,4 +15,11 @@ Open `localhost:3000` to view it in the browser.
 ### `npm run export`
 Export the Next app to `./out` folder.
 
+### Apps
+- [ ] Fast note 
+- [ ] Encode, decode
+- [ ] Colors hunt
+- [ ] 
+- [ ] 
+
 ### Thanks to [Nextjs](https://github.com/zeit/next.js) 😘

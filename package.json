@@ -1,6 +1,6 @@
 {
   "name": "fozg.net",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "fozg.net",
   "main": "webpack.config.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "gulp": "^3.9.1",
     "next": "^7.0.2",
     "node-sass": "^4.10.0",
-    "react": "^16.7",
+    "react": "^16.6.3",
     "react-dom": "^16.6.3"
   }
 }

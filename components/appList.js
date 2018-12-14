@@ -13,7 +13,7 @@ export default () => (
 const appsList = [
   {
     title: "TomatoWorks",
-    description: "A Work log, tracking your time inspired by PromodoTimmer",
+    description: "A time management inspired by Tomato timer",
     iconUrl: "/static/images/TomatoWorks@2x.png",
     url: "https://fozg.net/tomato",
   },

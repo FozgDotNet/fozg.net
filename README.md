@@ -4,13 +4,13 @@ This project was bootstrapped with [Nextjs](https://github.com/zeit/next.js)
 
 A simple Landing to listing apps.
 
-### `Install`
+### Install
 ```bash
 git clone https://github.com/fozg/fozg.net.git  
 cd fozg.net
 yarn & yarn build
 ```
-### `Development`
+### Development
 Runs the app in development mode.
 ```bash
 # simple run
@@ -18,7 +18,7 @@ yarn dev
 ```
 Open `localhost:3000` to view it in the browser.
 
-### `Deploy`
+### Deploy
 Just run `yarn run export`.
 Export the Next app to `./out` folder.
 
@@ -26,5 +26,5 @@ Export the Next app to `./out` folder.
 - [ ] Fast note 
 - [ ] Encode, decode
 - [ ] Colors hunt
-- [ ] 
-- [ ] 
+- [ ] ..
+

@@ -4,7 +4,7 @@ import './styles.scss';
 
 export default class TopMenu extends React.Component{
   state = {
-    isActive: false
+    isActive: true
   }
 
   componentDidMount () {

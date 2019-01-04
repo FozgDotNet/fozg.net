@@ -1,7 +1,7 @@
 import AppItem from './appItem';
 
 export default () => (
-  <div className="container mt-3">
+  <div className="container mt-3" style={{maxWidth: 900}}>
     <div className="row">
       {
         appsList.map((app, idx) => <AppItem {...app} key={idx} />)
@@ -16,12 +16,14 @@ const appsList = [
     description: "A time management inspired by Tomato timer",
     iconUrl: "/static/images/TomatoWorks@2x.png",
     url: "https://fozg.net/tomato",
+    backgroundColor: '#dc5758'
   },
   {
     title: "Accounts",
     description: "Your accounts on Fozg.net",
     iconUrl: "static/images/account64.png",
     url: "https://accounts.fozg.net",
+    backgroundColor: "#272727",
   },
   {
     title: "Profile",
@@ -29,6 +31,7 @@ const appsList = [
     isDevelopment: true,
     iconUrl: "static/images/profile64.png",
     url: "#",
+    backgroundColor: "rgb(93, 160, 161)",
   },
   {
     title: "Dashboard",
@@ -36,6 +39,7 @@ const appsList = [
     isDevelopment: true,
     iconUrl: "static/images/dashboard2x64.png",
     url: "#",
+    backgroundColor: "rgb(95, 95, 95)",
   },
   {
     title: "Write",
@@ -43,6 +47,7 @@ const appsList = [
     isDevelopment: true,
     iconUrl: "static/images/write.png",
     url: "#",
+    backgroundColor: "rgb(153, 142, 238)",
   },
   {
     title: "Read",
@@ -50,6 +55,7 @@ const appsList = [
     isDevelopment: true,
     iconUrl: "static/images/good read@2x.png",
     url: "#",
+    backgroundColor: "#e2c860",
   },
   
 ]

@@ -14,10 +14,7 @@ $primaryColor: #138b80;
 
 body {
   font-size: .9em;
-  background-color: #32353a;
-}
-h3 {
-  font-size: 1.2em;
+  background-color: #fafafa;
 }
 a {
   color: $primaryColor !important;
@@ -32,3 +29,14 @@ h3 {
   margin: 0;
 }
 
+.hr {
+  height: 1px;
+  margin-bottom: 12px;
+  border: none;
+  border-bottom: 1px solid #ececec;
+  margin-top: 0;
+}
+
+.title {
+  font-weight: 600;
+}

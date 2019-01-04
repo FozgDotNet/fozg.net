@@ -9,13 +9,13 @@ export default ({
   <div className="col-md-6 appItem">
     <style jsx>{`
       .AppItemWrap {
-        margin: 20px 0;
-        padding: 20px;
+        margin: 15px 0;
+        padding: 18px;
         border-radius: 10px;
         cursor: pointer;
         background: #ffffff;
-        color: #fff;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.13);
+        color: #138b80;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
         transition: transform .2s;
       }
       .AppItemWrap:hover{
@@ -23,7 +23,7 @@ export default ({
       }
       p {
         margin: 0;
-        color: #fff !important;
+        color: #666;
       }
       .CircleBadget {
         width: 60px;
@@ -37,7 +37,7 @@ export default ({
      
     `}</style>
     <a href={url || '#'} target="_blank">
-      <div className="row col AppItemWrap" style={{backgroundColor}}>
+      <div className="row col AppItemWrap">
         <div className="CircleBadget col-auto p-0">
           <img src={iconUrl} alt={title} className="rounded-circle"/>
         </div>

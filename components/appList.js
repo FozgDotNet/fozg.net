@@ -3,7 +3,7 @@ import AppItem from './appItem';
 export default () => (
   <div className="container mt-3" style={{maxWidth: 900}}>
     <div>
-      <h3 className="title">Apps</h3>
+      <h3 className="title">Apps/Projects</h3>
       <hr className="hr" />
     </div>
     <div className="row">

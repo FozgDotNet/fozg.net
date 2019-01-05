@@ -17,7 +17,7 @@ body {
   background-color: #fafafa;
 }
 a {
-  color: $primaryColor !important;
+  color: $primaryColor ;
   outline: none;
   text-decoration: none !important;
 }
@@ -39,4 +39,9 @@ h3 {
 
 .title {
   font-weight: 600;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
 }

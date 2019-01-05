@@ -5,8 +5,22 @@
   color: #26282c;
   overflow: hidden;
   transition: all .3s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   &__active {
     height: 50px;
     color: #c8c8c8;  
+  }
+}
+
+
+a.TopMenu__linkItem {
+  color: rgba(93, 160, 161, .8);
+
+  &:hover {
+    color: rgba(93, 160, 161, 1);
   }
 }

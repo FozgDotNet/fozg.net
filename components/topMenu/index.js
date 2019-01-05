@@ -27,13 +27,15 @@ export default class TopMenu extends React.Component{
     } = this.state;
     
     return (
-      <div id="menu" className={`TopMenu row m-0 align-items-center ${isActive &&'TopMenu__active'}`}>
-        <div className="p-2">
-          <img src="static/images/logo.png" alt="fozg.net" width="35"/>
-        </div>
-        <div className="col d-flex justify-content-end m-2">
-          <div className="row">
-
+      <div id="menu" className={`TopMenu ${isActive &&'TopMenu__active'}`}>
+        <div className=" container p-2 justify-content-between align-items-center row">
+          <div>
+            <img src="static/images/logo.png" alt="fozg.net" width="35"/>
+          </div>
+          <div className="align-items-center">
+            <a href="https://github.com/fozgdotnet" target="_blank" className="TopMenu__linkItem">
+              <strong>Github</strong>
+            </a>
           </div>
         </div>
       </div>

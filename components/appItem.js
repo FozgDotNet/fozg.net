@@ -7,7 +7,7 @@ export default ({
   isBeta,
   backgroundColor = 'red'
 }) => (
-  <div className="col-md-6 appItem">
+  <div className="col-xs-12 col-lg-6 appItem">
     <style jsx>{`
       .AppItemWrap {
         margin: 15px 0;
@@ -38,7 +38,7 @@ export default ({
      
     `}</style>
     <a href={url || '#'} target="_blank">
-      <div className="row col AppItemWrap">
+      <div className="row AppItemWrap">
         <div className="CircleBadget col-auto p-0">
           <img src={iconUrl} alt={title} className="rounded-circle"/>
         </div>

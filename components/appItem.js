@@ -4,6 +4,7 @@ export default ({
   iconUrl,
   url,
   isDevelopment,
+  isBeta,
   backgroundColor = 'red'
 }) => (
   <div className="col-md-6 appItem">
@@ -32,7 +33,7 @@ export default ({
       img {
         width: 100%;
         height: 100%;
-        box-shadow: 0 3px 4px rgba(0,0,0,.4);
+        box-shadow: 0 3px 4px rgba(0,0,0,.2);
       }
      
     `}</style>
@@ -44,7 +45,8 @@ export default ({
         <div className="col">
           <h3>{title}</h3>
           <p>{description}</p>
-          {isDevelopment && <div className="badge badge-pill badge-secondary">In Development</div>}
+          {isDevelopment && <div className="badge badge-pill badge-light">In Development</div>}
+          {isBeta && <div className="badge badge-pill badge-info">Beta</div>}
         </div>
       </div>
     </a>

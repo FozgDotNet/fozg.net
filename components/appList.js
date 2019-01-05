@@ -14,13 +14,14 @@ export default () => (
   </div>
 )
 
-const appsList = [
+export const appsList = [
   {
     title: "TomatoWorks",
     description: "A time management inspired by Tomato timer",
     iconUrl: "/static/images/TomatoWorks@2x.png",
     url: "https://fozg.net/tomato",
-    backgroundColor: '#dc5758'
+    backgroundColor: '#dc5758',
+    isBeta: true
   },
   {
     title: "Accounts",
@@ -28,6 +29,14 @@ const appsList = [
     iconUrl: "static/images/account64.png",
     url: "https://accounts.fozg.net",
     backgroundColor: "#272727",
+  },
+  {
+    title: "Pixel",
+    description: "Create pixel image that fast",
+    iconUrl: "static/images/heartpixel.png",
+    url: "https://pixel.fozg.net/",
+    backgroundColor: "#e2c860",
+    isBeta: true
   },
   {
     title: "Profile",
@@ -57,9 +66,10 @@ const appsList = [
     title: "Read",
     description: "Read blogs, stories, note..",
     isDevelopment: true,
-    iconUrl: "static/images/good read@2x.png",
+    iconUrl: "static/images/f-read-box-2.png",
     url: "#",
     backgroundColor: "#e2c860",
   },
+ 
   
 ]

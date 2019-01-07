@@ -16,7 +16,7 @@ export default () => (
 
 export const appsList = [
   {
-    title: "TomatoWorks",
+    title: "🍅 TomatoWorks",
     description: "A time management inspired by Tomato timer",
     iconUrl: "/static/images/TomatoWorks@2x.png",
     url: "https://fozg.net/tomato",
@@ -24,14 +24,14 @@ export const appsList = [
     isBeta: true
   },
   {
-    title: "Accounts",
+    title: "🔐 Accounts",
     description: "Your accounts on Fozg.net",
     iconUrl: "static/images/account64.png",
     url: "https://accounts.fozg.net",
     backgroundColor: "#272727",
   },
   {
-    title: "Pixel",
+    title: "💖 Pixel",
     description: "Create pixel image that fast",
     iconUrl: "static/images/heartpixel.png",
     url: "https://pixel.fozg.net/",
@@ -39,15 +39,15 @@ export const appsList = [
     isBeta: true
   },
   {
-    title: "Profile",
-    description: "Your Profile on Fozg.net",
+    title: "🧐 Profile",
+    description: "Your Profile on Fozg.net", 
     isDevelopment: true,
     iconUrl: "static/images/profile64.png",
     url: "#",
     backgroundColor: "rgb(93, 160, 161)",
   },
-  {
-    title: "Dashboard",
+  { 
+    title: "📜 Dashboard",
     description: "See people you flowing",
     isDevelopment: true,
     iconUrl: "static/images/dashboard2x64.png",
@@ -55,7 +55,7 @@ export const appsList = [
     backgroundColor: "rgb(95, 95, 95)",
   },
   {
-    title: "Write",
+    title: "📝 Write",
     description: "Write everything",
     isDevelopment: true,
     iconUrl: "static/images/write.png",
@@ -63,10 +63,18 @@ export const appsList = [
     backgroundColor: "rgb(153, 142, 238)",
   },
   {
-    title: "Read",
+    title: "📖 Read",
     description: "Read blogs, stories, note..",
     isDevelopment: true,
     iconUrl: "static/images/f-read-box-2.png",
+    url: "#",
+    backgroundColor: "#e2c860",
+  },
+  {
+    title: "⚡ Fast Note",
+    description: "Read blogs, stories, note..",
+    isDevelopment: true,
+    iconUrl: "static/images/fastnote.png",
     url: "#",
     backgroundColor: "#e2c860",
   },

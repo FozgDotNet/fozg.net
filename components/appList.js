@@ -72,7 +72,7 @@ export const appsList = [
   },
   {
     title: "⚡ Fast Note",
-    description: "Read blogs, stories, note..",
+    description: "Note everything fast!",
     isDevelopment: true,
     iconUrl: "static/images/fastnote.png",
     url: "#",

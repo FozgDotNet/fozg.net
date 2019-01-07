@@ -34,7 +34,7 @@ export default class TopMenu extends React.Component{
           </div>
           <div className="align-items-center">
             <a href="https://github.com/fozgdotnet" target="_blank" className="TopMenu__linkItem">
-              <strong>Github</strong>
+              <span>GitHub</span>
             </a>
           </div>
         </div>

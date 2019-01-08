@@ -5,6 +5,7 @@ export default ({
   url,
   isDevelopment,
   isBeta,
+  isPreview,
   backgroundColor = 'red'
 }) => (
   <div className="col-xs-12 col-lg-6 appItem">
@@ -55,8 +56,9 @@ export default ({
         <div className="col">
           <h3 className="ItemTitle">{title}</h3>
           <p>{description}</p>
-          {isDevelopment && <div className="badge badge-pill badge-light">In Development</div>}
-          {isBeta && <div className="badge badge-pill badge-info">Beta</div>}
+          {isDevelopment && <div className="badge badge-pill badge-info">In Development</div>}
+          {isBeta && <div className="badge badge-pill badge-success">Beta</div>}
+          {isPreview && <div className="badge badge-pill badge-warning">Preview</div>}
         </div>
       </div>
     </a>

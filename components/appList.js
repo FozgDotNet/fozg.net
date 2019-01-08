@@ -36,7 +36,7 @@ export const appsList = [
     iconUrl: "static/images/heartpixel.png",
     url: "https://pixel.fozg.net/",
     backgroundColor: "#e2c860",
-    isBeta: true
+    isPreview: true
   },
   {
     title: "🧐 Profile",
@@ -78,6 +78,7 @@ export const appsList = [
     url: "#",
     backgroundColor: "#e2c860",
   },
+  
  
   
 ]

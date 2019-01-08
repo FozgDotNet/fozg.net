@@ -4,12 +4,13 @@ export default ({children, bgTextColor = '#fafafa'}) => <div className="HrWrap">
       position: relative;
       display: flex;
       align-items: center;
+      padding: 15px 0;
     }
     .Hr {
       flex: 1;
       height: 6px;
       border-radius: 10px;
-      background-color: #ddd;
+      background-color: #e6e6e6;
     } 
     .Hr__text {
       font-weight: 600;

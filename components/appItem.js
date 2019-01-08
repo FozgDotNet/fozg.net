@@ -15,16 +15,26 @@ export default ({
         border-radius: 10px;
         cursor: pointer;
         background: #ffffff;
-        color: #138b80;
         box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
         transition: transform .2s;
+        min-height: 105px;
+      }
+      .AppItemWrap .badge {
+        transition: .3s opacity;
+        opacity: .8;
+      }
+      .ItemTitle {
+        transition: .3s color;
       }
       .AppItemWrap:hover{
-        transform: translateY(-10px);
+        transform: translateY(-5px);
+      }
+      .AppItemWrap:hover .badge {
+        opacity: 1;
       }
       p {
         margin: 0;
-        color: #666;
+        color: #999;
       }
       .CircleBadget {
         width: 60px;
@@ -43,7 +53,7 @@ export default ({
           <img src={iconUrl} alt={title} className="rounded-circle"/>
         </div>
         <div className="col">
-          <h3>{title}</h3>
+          <h3 className="ItemTitle">{title}</h3>
           <p>{description}</p>
           {isDevelopment && <div className="badge badge-pill badge-light">In Development</div>}
           {isBeta && <div className="badge badge-pill badge-info">Beta</div>}

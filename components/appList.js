@@ -1,10 +1,10 @@
 import AppItem from './appItem';
+import Hr from './hr';
 
 export default () => (
   <div className="container mt-3" style={{maxWidth: 900}}>
     <div>
-      <h3 className="title">Apps/Projects</h3>
-      <hr className="hr" />
+      <Hr>Apps/Projects</Hr>
     </div>
     <div className="row">
       {

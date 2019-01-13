@@ -6,7 +6,7 @@ import './styles.scss';
 
 export default () => <div className="bgAppIcons">
   {
-    appsList.concat(appsList).concat(appsList).map((item, i) => <IconItem iconUrl={item.iconUrl} key={i} />)
+    appsList.concat(appsList).map((item, i) => <IconItem iconUrl={item.iconUrl} key={i} />)
   }
 </div>
 
@@ -47,10 +47,15 @@ class IconItem extends React.Component {
     const {top, left, opacity, width} = this.state;
     const {iconUrl} = this.props;
     return (
-      <img src={iconUrl} className="rounded-circle bgAppIcons__item"
+      <div src={iconUrl} className="rounded-circle bgAppIcons__item"
         style={{
           top: `${top}%`, left: `${left}%`, position: 'absolute',
-          opacity, width: `${width}em`,  filter: `blur(${width - 5}px)`
+          opacity, 
+          width: `${width}em`,  
+          height: `${width}em`,  
+          filter: `blur(${width - 5}px)`,
+          backgroundImage: `url(${iconUrl})`,
+          backgroundSize: 'cover'
         }}/>
     )
   }

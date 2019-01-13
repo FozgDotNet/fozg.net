@@ -21,7 +21,7 @@ export const appsList = [
     iconUrl: "/static/images/TomatoWorks@2x.png",
     url: "https://fozg.net/tomato",
     backgroundColor: '#dc5758',
-    isBeta: true
+    isPreview: true
   },
   {
     title: "🔐 Accounts",

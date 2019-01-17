@@ -1,5 +1,7 @@
 import React from 'react';
 import Hr from './hr';
+import moment from 'moment';
+
 const blogRelativeLink = 'https://fozg.net/blog/';
 
 export default class Blogs extends React.Component {
@@ -12,7 +14,7 @@ export default class Blogs extends React.Component {
 
   getBlog = async () => {
     // TODO: hard code for now
-    fetch('https://fozg.net/blog/api/v1/blogs/f?username=fozg').then(res => res.json())
+    fetch('https://fozg.net/blog/api/v1/blogs?username=fozg').then(res => res.json())
     .then(blogs => {
       this.setState({blogs})
     })
@@ -43,10 +45,10 @@ export default class Blogs extends React.Component {
         <div className="col justify-content-center">
           {!blogs.length && `Loading...`}
           {blogs.map((blog, idx) => <div key={blog.title} className="row align-items-center blogItem">
-            <span className="time">(10/10/2018)</span>
+            <span className="time">({moment(blog.created).format('MM-DD-YYYY')})</span>
             <div> 
               <a href={`${blogRelativeLink}${blog.slug}`}><strong className="title">{blog.title}</strong></a>
-              {' '}<i className="desc">- This is a short description for testing</i>
+              {' '}<i className="desc">- {blog.description}</i>
             </div>
           </div>)}
         </div>

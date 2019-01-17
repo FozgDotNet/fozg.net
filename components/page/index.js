@@ -1,6 +1,8 @@
 import React from 'react';
 import Head from 'next/head'
 import {initGA, logPageView} from '../../utils/ga';
+import Footer from '../footer';
+
 import "./styles.scss";
 
 export default class Page extends React.Component {
@@ -38,6 +40,7 @@ export default class Page extends React.Component {
         <div>
           {children}
         </div>
+        <Footer />
       </div>
     )
   }

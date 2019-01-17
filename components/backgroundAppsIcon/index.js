@@ -1,6 +1,6 @@
 import React from 'react';
 
-import appList, {appsList} from '../appList';
+import {appsList} from '../appList';
 
 import './styles.scss';
 

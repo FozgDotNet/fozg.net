@@ -8,10 +8,10 @@ export default ({
   isPreview,
   backgroundColor = 'red'
 }) => (
-  <div className="col-xs-12 col-lg-6 appItem">
+  <div className="col-xs-12 col-sm-10 col-lg-6 appItem">
     <style jsx>{`
       .AppItemWrap {
-        margin: 15px 0;
+        margin: 15px auto;
         padding: 18px;
         border-radius: 10px;
         cursor: pointer;

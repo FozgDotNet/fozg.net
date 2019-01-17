@@ -14,8 +14,20 @@
   }
 }
 
-.Cpr {
+.CopyRight {
   margin-top: 2em;
   color: #aaa;
-
+}
+.CodeWithLove  {
+  background: #212223;
+  color: #ccc;
+  text-align: center;
+  padding: 5px;
+  code {
+    padding: 1px 5px;
+    font-weight: bold;
+  }
+  .codeChar {
+    color: #ffd300;
+  }
 }

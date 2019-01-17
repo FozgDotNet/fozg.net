@@ -1,9 +1,10 @@
 import './styles.scss';
 import LinkedInLogo from './logoLinkedIn';
-import EmailLogo from './logoEmail';
-import logoEmail from './logoEmail';
+import HeartLogo from './heart';
+import LogoEmail from './logoEmail';
 
 export default () => (
+  <>
   <div className="Footer">
     <div className="container row align-items-center justify-content-center ">
       {
@@ -17,10 +18,14 @@ export default () => (
         ))
       }
     </div>
-    <div className="Cpr">
-      @{new Date().getFullYear()} <strong><a href="https://fozg.net">fozg.net</a></strong>
-    </div>
   </div>
+  <div className="CodeWithLove">
+    <code>
+      <span className="codeChar">{`<>`} </span>
+      with <HeartLogo /> by <a href="https://github.com/">fozg</a>
+    </code>
+  </div>
+  </>
 )
 
 const Socials = [
@@ -35,7 +40,7 @@ const Socials = [
     alt: 'LinkedIn'
   },
   {
-    svg: logoEmail,
+    svg: LogoEmail,
     link: 'mailto://phongdaohong@gmail.com',
     alt: 'Gmail'
   }

@@ -2,11 +2,11 @@ import AppItem from './appItem';
 import Hr from './hr';
 
 export default () => (
-  <div className="container mt-3" style={{maxWidth: 900}}>
+  <div className="container mt-3">
     <div>
       <Hr>Apps/Projects</Hr>
     </div>
-    <div className="row">
+    <div className="row justify-content-center">
       {
         appsList.map((app, idx) => <AppItem {...app} key={idx} />)
       }

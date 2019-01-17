@@ -14,7 +14,6 @@ export default class Blogs extends React.Component {
     // TODO: hard code for now
     fetch('https://fozg.net/blog/api/v1/blogs/f?username=fozg').then(res => res.json())
     .then(blogs => {
-      console.log(blogs);
       this.setState({blogs})
     })
   }
@@ -42,6 +41,7 @@ export default class Blogs extends React.Component {
         `}</style>
         <Hr>My writes</Hr>
         <div className="col justify-content-center">
+          {!blogs.length && `Loading...`}
           {blogs.map((blog, idx) => <div key={blog.title} className="row align-items-center blogItem">
             <span className="time">(10/10/2018)</span>
             <div> 

@@ -16,7 +16,9 @@ export default class Blogs extends React.Component {
     // TODO: hard code for now
     fetch('https://fozg.net/blog/api/v1/blogs?username=fozg').then(res => res.json())
     .then(blogs => {
-      this.setState({blogs})
+      this.setState({blogs: blogs.sort(function(a,b){
+        return new Date(b.created) - new Date(a.created);
+      })})
     })
   }
 

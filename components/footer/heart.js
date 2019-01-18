@@ -1,6 +1,6 @@
 // Heart SVG LOGO
 export default () => <svg
-  class="" fill="rgb(244, 67, 54)"
+  className="" fill="rgb(244, 67, 54)"
   width="20px" height="20px"
   viewBox="0 0 1024 1024"
 >

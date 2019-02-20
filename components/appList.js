@@ -29,6 +29,7 @@ export const appsList = [
     iconUrl: "static/images/account64.png",
     url: "https://accounts.fozg.net",
     backgroundColor: "#272727",
+    isBeta: true
   },
   {
     title: "💖 Pixel",

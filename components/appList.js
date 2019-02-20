@@ -39,6 +39,14 @@ export const appsList = [
     isPreview: true
   },
   {
+    title: "⚡ Messnote",
+    description: "Note everything fast!",
+    iconUrl: "static/images/fastnote.png",
+    url: "https://messnote.fozg.net",
+    backgroundColor: "#e2c860",
+    isPreview: true,
+  }, 
+  {
     title: "🧐 Profile",
     description: "Your Profile on Fozg.net", 
     isDevelopment: true,
@@ -70,15 +78,6 @@ export const appsList = [
     url: "#",
     backgroundColor: "#e2c860",
   },
-  {
-    title: "⚡ Fast Note",
-    description: "Note everything fast!",
-    isDevelopment: true,
-    iconUrl: "static/images/fastnote.png",
-    url: "#",
-    backgroundColor: "#e2c860",
-  },
-  
- 
+
   
 ]

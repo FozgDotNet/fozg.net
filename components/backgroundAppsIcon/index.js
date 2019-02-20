@@ -6,7 +6,7 @@ import './styles.scss';
 
 export default () => <div className="bgAppIcons">
   {
-    appsList.concat(appsList).map((item, i) => <IconItem iconUrl={item.iconUrl} key={i} />)
+    appsList.map((item, i) => <IconItem iconUrl={item.iconUrl} key={i} />)
   }
 </div>
 

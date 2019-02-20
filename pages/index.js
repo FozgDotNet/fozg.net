@@ -6,7 +6,7 @@ import Blogs from '../components/blogs';
 
 export default () => (
   <Page title="Fozg.net">
-    <TopMenu />
+    {/* <TopMenu /> */}
     <Intro />
     
     <AppList />

@@ -28,7 +28,7 @@ export default class Blogs extends React.Component {
       <div className="container">
         <style jsx>{`
           .blogItem {
-            padding: 5px 0;
+            padding: 10px 0;
           }
           .time {
             color: #b7b7b7;
@@ -36,21 +36,25 @@ export default class Blogs extends React.Component {
             margin-right: 10px;
           }
           .title {
-            font-size: 16px;
+            font-size: 1.8em;
             color: #138b80;
+            font-weight: 800;
+            margin-top: 0;
+            padding-top: 0;
           }
           .desc {
-            color: darkgray;
+            color: grey;
+            font-size: 1.1em;
           }
         `}</style>
         <Hr>My writes</Hr>
         <div className="col justify-content-center">
           {!blogs.length && `Loading...`}
-          {blogs.map((blog, idx) => <div key={blog.title} className="row align-items-center blogItem">
-            <span className="time">({moment(blog.created).format('MM-DD-YYYY')})</span>
+          {blogs.map((blog, idx) => <div key={blog.title} className="row align-items-start blogItem">
             <div> 
-              <a href={`${blogRelativeLink}${blog.slug}`}><strong className="title">{blog.title}</strong></a>
-              {' '}<i className="desc">- {blog.description}</i>
+              <span className="time">{moment(blog.created).format('MM-DD-YYYY')}</span>
+              <div><a href={`${blogRelativeLink}${blog.slug}`}><strong className="title">{blog.title}</strong></a></div>
+              <span className="desc">{blog.description}</span>
             </div>
           </div>)}
         </div>

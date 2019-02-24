@@ -46,14 +46,23 @@ export default class Blogs extends React.Component {
             color: grey;
             font-size: 1.1em;
           }
+          .tag {
+            background-color: #5da0a1;
+            color: #fff;
+            margin-right: 5px;
+            padding: 1px 5px;
+            border-radius: 5px;
+            font-weight: 600;
+          }
         `}</style>
         <Hr>My writes</Hr>
         <div className="col justify-content-center">
           {!blogs.length && `Loading...`}
-          {blogs.map((blog, idx) => <div key={blog.title} className="row align-items-start blogItem">
+          {blogs.map((blog) => <div key={blog.slug} className="row align-items-start blogItem">
             <div> 
               <span className="time">{moment(blog.created).format('MM-DD-YYYY')}</span>
               <div><a href={`${blogRelativeLink}${blog.slug}`}><strong className="title">{blog.title}</strong></a></div>
+              <div>{blog.tags && blog.tags.map(tag => <span className="tag">#{tag}</span>)}</div>
               <span className="desc">{blog.description}</span>
             </div>
           </div>)}

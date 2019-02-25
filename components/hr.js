@@ -1,4 +1,4 @@
-export default ({children, bgTextColor = '#fafafa'}) => <div className="HrWrap">
+export default ({children, bgTextColor = 'transparent'}) => <div className="HrWrap">
   <style jsx>{`
     .HrWrap {
       position: relative;
@@ -10,7 +10,7 @@ export default ({children, bgTextColor = '#fafafa'}) => <div className="HrWrap">
       flex: 1;
       height: 6px;
       border-radius: 10px;
-      background-color: #e6e6e6;
+      background-color: #252525;
     } 
     .Hr__text {
       font-weight: 600;

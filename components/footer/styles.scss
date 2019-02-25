@@ -1,9 +1,10 @@
 .Footer {
-  background-color: #2a2d2f;
+  // background-color: #2a2d2f;
+  background-color: #0e0e0e;
   padding: 5em 0;
   margin-top: 5em;
   text-align: center;
-
+  border-top: 1px solid #000;
   &__socialItem {
     margin: 0 10px;
   }
@@ -19,7 +20,8 @@
   color: #aaa;
 }
 .CodeWithLove  {
-  background: #212223;
+  background: #0e0e0e;
+  border-top: 1px solid #000;
   color: #ccc;
   text-align: center;
   padding: 5px;

@@ -15,10 +15,13 @@ export default ({
         padding: 18px;
         border-radius: 10px;
         cursor: pointer;
-        background: #ffffff;
-        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .1);
+        background: #26282c;
+        /* box-shadow: 0 2px 6px 0 rgba(0,0,0,.1); */
+        -webkit-transition: -webkit-transform .2s;
+        -webkit-transition: transform .2s;
         transition: transform .2s;
         min-height: 105px;
+        border: 1px solid #0e0e0e;
       }
       .AppItemWrap .badge {
         transition: .3s opacity;

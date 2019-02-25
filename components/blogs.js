@@ -62,7 +62,7 @@ export default class Blogs extends React.Component {
             <div> 
               <span className="time">{moment(blog.created).format('MM-DD-YYYY')}</span>
               <div><a href={`${blogRelativeLink}${blog.slug}`}><strong className="title">{blog.title}</strong></a></div>
-              <div>{blog.tags && blog.tags.map(tag => <span className="tag">#{tag}</span>)}</div>
+              <div>{blog.tags && blog.tags.map(tag => <span className="tag">#{tag.tagName}</span>)}</div>
               <span className="desc">{blog.description}</span>
             </div>
           </div>)}

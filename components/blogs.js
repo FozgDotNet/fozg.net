@@ -16,9 +16,7 @@ export default class Blogs extends React.Component {
     // TODO: hard code for now
     fetch('https://fozg.net/blog/api/v1/blogs?username=fozg').then(res => res.json())
     .then(blogs => {
-      this.setState({blogs: blogs.sort(function(a,b){
-        return new Date(b.created) - new Date(a.created);
-      })})
+      this.setState({blogs: blogs})
     })
   }
 
@@ -62,7 +60,13 @@ export default class Blogs extends React.Component {
             <div> 
               <span className="time">{moment(blog.created).format('MM-DD-YYYY')}</span>
               <div><a href={`${blogRelativeLink}${blog.slug}`}><strong className="title">{blog.title}</strong></a></div>
-              <div>{blog.tags && blog.tags.map(tag => <span className="tag">#{tag.tagName}</span>)}</div>
+              <div>
+                {blog.tags && blog.tags.map(tag => <span className="tag"
+                  key={tag.tagName}
+                >
+                  #{tag.tagName}
+                </span>)}
+              </div>
               <span className="desc">{blog.description}</span>
             </div>
           </div>)}

@@ -48,6 +48,14 @@ export const appsList = [
     isPreview: true,
   }, 
   {
+    title: "📖 Read",
+    description: "Read blogs, stories, note..",
+    isPreview: true,
+    iconUrl: "static/images/f-read-box-2.png",
+    url: "https://fozg.net/blog",
+    backgroundColor: "#e2c860",
+  },
+  {
     title: "🧐 Profile",
     description: "Your Profile on Fozg.net", 
     isDevelopment: true,
@@ -71,14 +79,4 @@ export const appsList = [
     url: "#",
     backgroundColor: "rgb(153, 142, 238)",
   },
-  {
-    title: "📖 Read",
-    description: "Read blogs, stories, note..",
-    isDevelopment: true,
-    iconUrl: "static/images/f-read-box-2.png",
-    url: "#",
-    backgroundColor: "#e2c860",
-  },
-
-  
 ]

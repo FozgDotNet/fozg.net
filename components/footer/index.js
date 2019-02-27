@@ -22,7 +22,8 @@ export default () => (
   <div className="CodeWithLove">
     <code>
       <span className="codeChar">{`<>`} </span>
-      with <HeartLogo /> by <a href="https://github.com/">fozg</a>
+      with <HeartLogo /> by <a href="https://github.com/fozg">fozg</a>;
+        bootstrap with <a href="https://nextjs.org/" target="_blank">Nextjs</a>
     </code>
   </div>
   </>

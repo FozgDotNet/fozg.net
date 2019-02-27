@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "deploy": "yarn build && yarn export && scp -r out/. root@fozg.net:/home/fozg.net/"
+    "deploy": "yarn build && yarn export && scp -r out/. root@128.199.75.252:/home/fozg.net/"
   },
   "repository": {
     "type": "git",

@@ -8,20 +8,20 @@ export default class Blogs extends React.Component {
   state = {
     blogs: []
   }
-  componentDidMount () {
+  componentDidMount() {
     this.getBlog();
   }
 
   getBlog = async () => {
     // TODO: hard code for now
-    fetch('https://fozg.net/blog/api/v1/blogs?username=fozg').then(res => res.json())
-    .then(blogs => {
-      this.setState({blogs: blogs})
-    })
+    fetch('https://fozg.net/blog/api/v1/blogs?username=fozg&top=5').then(res => res.json())
+      .then(blogs => {
+        this.setState({ blogs: blogs.slice(0, 5) })
+      })
   }
 
-  render () {
-    const {blogs} = this.state;
+  render() {
+    const { blogs } = this.state;
     return (
       <div className="container">
         <style jsx>{`
@@ -52,12 +52,25 @@ export default class Blogs extends React.Component {
             border-radius: 5px;
             font-weight: 600;
           }
+          .view-more {
+            background-color: #0e0e0e;
+            margin: auto;
+            display: inline-block;
+            color: #fff !important;
+            font-weight: 600;
+            border-radius: 50px;
+            padding: 5px 30px;
+            border: 1px solid #000;
+          }
+          .view-more:hover {
+            background-color: #5da0a1;          
+          }
         `}</style>
         <Hr>My writes</Hr>
         <div className="col justify-content-center">
           {!blogs.length && `Loading...`}
           {blogs.map((blog) => <div key={blog.slug} className="row align-items-start blogItem">
-            <div> 
+            <div>
               <span className="time">{moment(blog.created).format('MM-DD-YYYY')}</span>
               <div><a href={`${blogRelativeLink}${blog.slug}`}><strong className="title">{blog.title}</strong></a></div>
               <div>
@@ -70,6 +83,9 @@ export default class Blogs extends React.Component {
               <span className="desc">{blog.description}</span>
             </div>
           </div>)}
+          <div style={{textAlign: "center", marginTop: 20}}>
+            <a className="view-more" href="https://fozg.net/blog" target="_blank">Xem thêm</a>
+          </div>
         </div>
       </div>
     )

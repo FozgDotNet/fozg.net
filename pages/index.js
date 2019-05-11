@@ -4,6 +4,7 @@ import Intro from '../components/intro'
 import AppList from '../components/appList';
 import FunProjects from '../components/funProjects';
 import Blogs from '../components/blogs';
+import Npm from '../components/npm';
 
 export default () => (
   <Page title="Fozg.net">
@@ -14,6 +15,8 @@ export default () => (
     
     <Blogs />
 
+    <Npm />
+    
     <FunProjects />
   </Page>
 )

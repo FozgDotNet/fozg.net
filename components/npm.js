@@ -49,7 +49,7 @@ export default () => (
 export const appsList = [
   {
     title: "react-light-state",
-    version: "0.0.4",
+    version: "0.0.7",
     github: "fozg/react-light-state",
     linkNpm: "https://npmjs.com/package/react-light-state",
     linkGithub: "https://github.com/fozg/react-light-state",

@@ -1,6 +1,6 @@
 import Hr from "./hr";
 
-const Item = ({ title, description, linkNpm, linkGithub, github, version }) => (
+const Item = ({ name, description, links, version }) => (
   <div className="wrap col-xs-12 col-sm-10 col-md-5 m-1">
     <style jsx>{`
       .wrap {
@@ -14,53 +14,62 @@ const Item = ({ title, description, linkNpm, linkGithub, github, version }) => (
       }
       .version {
         color: #fff;
-        opacity: .5;
+        opacity: 0.5;
       }
       .description {
         color: #999;
       }
     `}</style>
     <div className="d-flex justify-content-between">
-      <a className="title" href={linkNpm} target="_blank">{title}</a>
+      <a className="title" href={links.npm} target="_blank">
+        {name}
+      </a>
       <div className="version">{version}</div>
     </div>
     <div>
-      <a href={linkGithub} target="_blank">{github}</a>
+      <a href={links.homepage} target="_blank">
+        {links.repository}
+      </a>
     </div>
-    <div className="description">
-      {description}
-    </div>
+    <div className="description">{description}</div>
   </div>
 );
 
-export default () => (
-  <div className="container mt-3">
-    <div>
-      <Hr>NPM</Hr>
-    </div>
-    <div className="row d-flex justify-content-center">
-      {appsList.map((app, idx) => (
-        <Item {...app} key={idx} />
-      ))}
-    </div>
-  </div>
-);
+export default class NPMPackages extends React.Component {
+  state = {
+    appList: []
+  };
 
-export const appsList = [
-  {
-    title: "react-light-state",
-    version: "0.0.7",
-    github: "fozg/react-light-state",
-    linkNpm: "https://npmjs.com/package/react-light-state",
-    linkGithub: "https://github.com/fozg/react-light-state",
-    description: "Light and simple React state management.",
-  },
-  {
-    title: "fozg-ui",
-    version: "1.0.2 (0.0.2)",
-    github: "fozg/fozg-ui",
-    linkNpm: "https://npmjs.com/package/fozg-ui",
-    linkGithub: "https://github.com/fozg/fozg-ui",
-    description: "Personal UI kit.",
-  },
-];
+  componentDidMount() {
+    fetch("https://api.npms.io/v2/search?q=author:fozg", {
+      credentials: "omit",
+      mode: "cors"
+    })
+      .then(res => res.json())
+      .then(data => {
+        this.setState({ appsList: data.results.filter(item => [
+          "react-light-state", 
+          "fozg-ui",
+          "react-weekdays-picker",
+          "roumuter",
+          "react-dashout"
+        ].includes(item.package.name) )});
+      });
+  }
+  render() {
+    const { appsList = [] } = this.state;
+
+    return (
+      <div className="container mt-3">
+        <div>
+          <Hr>NPM</Hr>
+        </div>
+        <div className="row d-flex justify-content-center">
+          {appsList.map((app, idx) => (
+            <Item {...app.package} key={idx} />
+          ))}
+        </div>
+      </div>
+    );
+  }
+}

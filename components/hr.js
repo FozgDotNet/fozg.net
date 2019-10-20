@@ -4,7 +4,7 @@ export default ({children, bgTextColor = 'transparent'}) => <div className="HrWr
       position: relative;
       display: flex;
       align-items: center;
-      padding: 15px 0;
+      padding: 6em 0 40px;
     }
     .Hr {
       flex: 1;

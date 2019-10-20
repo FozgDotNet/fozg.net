@@ -21,6 +21,8 @@ export default ({
         -webkit-transition: transform .2s;
         transition: transform .2s;
         min-height: 105px;
+        z-index;: 100;
+        position: relative;
         border: 1px solid #0e0e0e;
       }
       .AppItemWrap .badge {

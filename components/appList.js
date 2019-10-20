@@ -2,7 +2,13 @@ import AppItem from "./appItem";
 import Hr from "./hr";
 
 export default () => (
-  <div className="container mt-3">
+  <div className="container mt-3 appListsWrap">
+    <style jsx>{`
+      .appListsWrap {
+        position: relative;
+        z-index: 100;
+      }
+    `}</style>
     <div>
       <Hr>Apps/Projects</Hr>
     </div>

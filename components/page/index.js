@@ -36,6 +36,7 @@ export default class Page extends React.Component {
           <meta name="keywords" content="Workspace,Social,Fozg,Works,Blogs"/>
           <meta name="author" content="Phong (fozg) Dao"/>
           <link rel="icon" href="static/images/favicon.png" />
+          <meta name="theme-color" content="#181A1F" />
         </Head> 
         <div>
           {children}

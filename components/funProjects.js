@@ -21,6 +21,18 @@ export const appsList = [
     description: "A tool to apply water mark for my wife's shop",
     iconUrl: "/static/images/SungFamVang.png",
     url: "https://sung.fozg.net",
-    backgroundColor: 'rgb(255, 179, 71)',
+    backgroundColor: '#ffb040',
   },
+  {
+    title: "Jira Breaker",
+    description: "A minial tool that help you breaks your task easier.",
+    iconUrl: "/static/images/jiraBreaker.png",
+    url: "https://fozg.net/jira",
+    backgroundColor: '#0f2440',
+  },
+  {
+    title: "Postwoman",
+
+    
+  }
 ]

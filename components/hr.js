@@ -11,6 +11,7 @@ export default ({children, bgTextColor = 'transparent'}) => <div className="HrWr
       height: 6px;
       border-radius: 10px;
       background-color: #252525;
+      margin: 5em 0;
     } 
     .Hr__text {
       font-weight: 600;

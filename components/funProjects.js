@@ -30,9 +30,9 @@ export const appsList = [
     url: "https://fozg.net/jira",
     backgroundColor: '#0f2440',
   },
-  {
-    title: "Postwoman",
+  // {
+  //   title: "Postwoman",
 
     
-  }
+  // }
 ]

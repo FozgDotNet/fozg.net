@@ -21,7 +21,10 @@ export default ({
         -webkit-transition: transform .2s;
         transition: transform .2s;
         border: 1px solid #0e0e0e;
-        height: 300px;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
       }
       .AppItemWrap .badge {
         transition: .3s opacity;
@@ -50,13 +53,16 @@ export default ({
         width: 100%;
         height: 100%;
       }
+      .textWrap {
+        padding: 20px;
+      }
     `}</style>
     <a href={url || '#'} target="_blank">
       <div className="row AppItemWrap" style={{backgroundColor}}>
         <div className="CircleBadget col-auto p-0">
           <img src={iconUrl} alt={title} className="rounded-circle"/>
         </div>
-        <div className="col">
+        <div className="col textWrap">
           <h3 className="ItemTitle">{title}</h3>
           <p>{description}</p>
         </div>
